@@ -1,0 +1,92 @@
+* {
+  box-sizing:border-box;
+}
+body {
+margin:0;
+font-family:'poppins',sans-serif;
+}
+nav {
+  height:70px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color:#F55A5A;
+}
+.nav--logo{
+  Width:24px;
+  Height:24px;
+  Top: 16px;
+  Left:213px;
+  color:#FFFFFF;
+
+}
+.heading{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    color:#FFFF;
+  }
+  .navbar{
+  width: 550px;
+  height: 704px;
+  }
+.hero--photo{
+  width: 125px;
+  height: 168px;
+  top: 100px;
+  left: 40px;
+  border-radius: 5px;
+}
+.hero--header{
+  font-family: Inter;
+ font-size: 25px;
+ font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+ color: #2B283A;
+  
+}
+.hero--year{
+  font-family: Inter;
+font-size: 10px;
+font-weight: 700;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
+color:#2B283A;
+}
+.map--container{
+  align-items: center;
+}
+.japan {
+  font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0.17em;
+text-align: left;
+color:#2B283A;
+}
+.view-on-google-maps{
+  text-decoration: underline;
+  font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
+color: #918E9B;
+
+}
+.hero--text{
+  font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #2B283A;
+
+}
