@@ -6,7 +6,10 @@ export default function Card(props) {
     return (
         <div className="card-container">
             <div className="main-container">
-            <img src={`./images/${props.ImageURL}`} className="main-image" alt="card" />
+          
+            <img src={props.ImageURL ? `./images/${props.ImageURL}` : './images/fallback.jpg'} className="main-image" alt="card"
+/>
+
             </div>
             <div className="info">
                 <div className="location">

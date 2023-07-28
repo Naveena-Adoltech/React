@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Sidebar Styles */
+.pane.sidebar {
+  flex: 1;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.sidebar--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sidebar--header h3 {
+  font-size: 1.2rem;
+}
+
+.new-note {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.new-note:hover {
+  background-color: #0056b3;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.title:hover {
+  background-color: #e0e0e0;
+}
+
+.selected-note {
+  background-color: #b0bec5;
+}
+
+.text-snippet {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Scrollbar Style (Optional) */
+.pane.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pane.sidebar::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+  border-radius: 4px;
+}
+
+.pane.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;
+}
+
+/* Media Query for Responsive Layout (Optional) */
+@media screen and (max-width: 600px) {
+  .pane.sidebar {
+    flex: 0 0 30%;
+  }
+}
+.delete-btn{
+  display:none;
+  background:none;
+  border:none;
+}
+.title:hover > .delete-btn{
+  display:block;
+}
+.trash-icon{
+  cursor:pointer;
+}
+.gg-trash{
+  box-sizing:border-box;
+  position:relative;
+  display:block;
+  transform:scale(var(--ggs,1));
+  width:10px;
+  height:12px;
+  border:2px solid transparent;
+  box-shadow:
+      0 0 0 2px,
+      inset -2px 0 0,
+      inset 2px 0 0;
+      border-bottom-left-radius:1px
+}
+.gg-trash::after,
+.gg-trash::before {
+  content:"";
+  display:block;
+  box-sizing:border-box;
+  position:absolute
+}
+.gg-trash::after{
+  background:currentColor;
+  border-radius:3px;
+  width:10px;
+  height:2px;
+  top:-4px;
+  left:-5px
+}
+.gg-trash::before{
+  width:10px;
+  height:4px;
+  border:2px solid;
+  border-bottom:transparent;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  top:-7px
+}
+.split-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  height:100%;
+}
+
+.split-left {
+  flex: 1; 
+  padding: 10px; 
+  width:100%;
+  border-right: 1px solid #ccc;
+  resize:horizontal; 
+  overflow-y: auto; 
+}
+
+.split-right {
+  flex: 1; 
+  width:100%;
+  resize:horizontal;
+  padding: 10px; 
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.no-notes button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+

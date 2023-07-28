@@ -24,7 +24,7 @@ export default[
     startDate:"27 May, 2021",
     endDate:"8 Jun, 2021",
     description:"The Geiranger Fjord is a fjord in the sunmore region of More og Romsdal country,Norway.It is located entirely in the Stranda Municipality",
-    ImageURL:"geirangerfjord.jpeg",
+    ImageURL:"geirangerfjord.jpeg"
 }
 
 ]
